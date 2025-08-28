@@ -21,7 +21,7 @@ const App = () => {
   const chatEndRef = useRef(null);
 
   useEffect(() => {
-    const socketInstance = io("http://localhost:3000");
+    const socketInstance = io("https://nexa-backend-lo3e.onrender.com");
     setSocket(socketInstance);
 
     socketInstance.on("message-response", (data) => {
