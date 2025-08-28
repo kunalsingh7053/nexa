@@ -1,0 +1,7 @@
+@import "tailwindcss";
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+button:active{
+scale: 0.98;
+}
