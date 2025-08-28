@@ -7,7 +7,10 @@ const { text } = require('stream/consumers');
 const httpServer = createServer(app);
 const io = new Server(httpServer, { 
   cors: {
-    origin: "*", // allow all origins
+    origin: [
+      "http://localhost:5173",              // local dev
+      "https://nexa-frontend-lo3e.onrender.com" // deployed frontend
+    ],
     methods: ["GET", "POST"]
   }
 });
